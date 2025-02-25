@@ -19,6 +19,7 @@ class FilmFactory extends Factory
     {
         return [
             'title' => fake()->realText(16),
+            'director' => fake()->realText(16),
             'summary' => fake()->realText(),
             'cover' => fake()->image(dir: storage_path('app/public'), fullPath: false),
         ];
